@@ -1,0 +1,47 @@
+/* universal & common styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ol, ul{
+    list-style-type: none;
+    display: flex;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5ms ease-in-out;
+}
+button:hover{
+    background-color: rgb(111, 130, 150);
+    color: white;
+}
+
+/* body aria*/
+nav{
+    background-color: FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    margin: 10px 60px;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav li a{
+    ho
+}
+header{
+    background-image: url('./assets/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}

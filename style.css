@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'inter', 'sans-serif';
+    font-family: "inter", sans-serif;
 }
 a{
     text-decoration: none;
@@ -29,18 +29,18 @@ button:hover{
 
                     /* nav aria */
 nav{
-    background-color: FFFFFF;
+    background-color: #eee9e9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 60px;
+    padding: 20px 60px;
 }
 nav ul{
     display: flex;
 }
 nav ul li{
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 nav li a{
     
@@ -90,16 +90,16 @@ header button{
 }
 .speaker-profile{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 } 
 .speaker-profile div{
-    width: 32rem;
+    width: 100%;
     border: 0.1px solid rgb(228, 228, 238);
     border-radius: 10px;
 }
 .speaker-profile img{
-    width: 32rem;
+    width: 100%;
 }
 .speaker-profile p{
     display: flex;
@@ -108,43 +108,38 @@ header button{
     margin: 1rem;
 }
 .speaker-profile p :nth-child(1) {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: blue;
 }
 .speaker-profile p :nth-child(2) {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .speaker-profile p :nth-child(3){
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
-                        /* cost layout  */
-.cost-layout{
+                        /* price layout  */
+.price-layout{
     margin: 5rem;
 }
-.cost-layout>p{
+.price-layout>p{
     text-align: center;
     margin-top: 1rem;
     font-size: 0.7rem;
 }
 .plans{
-    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
     margin: 2rem auto;
-    
 }
-.cost-layout h4{
+.price-layout h4{
     text-align: center;
     font-size: 2rem;
 }
 .plans{
-    width: 65%;
-}
-.plans div{
-    
+    width: 70%;
 }
 .plans p{
     display: flex;
@@ -153,15 +148,11 @@ header button{
     margin: 0 0 1rem 0;
     padding: 0 0 1rem 0;
 }
-.plans ul{
-    
-    
-}
 .plans ul li{
     list-style-type: disc;
     margin-bottom: 0.5rem;
     list-style: inside;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 .standard-plan, .pro-plan, .team-plan{
     border: 1px solid rgb(228, 228, 238);   
@@ -171,7 +162,12 @@ header button{
 .plans p span:nth-child(1),
 .plans p span:nth-child(3)
 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+}
+.standard-plan button:hover,
+.team-plan button:hover{
+    background-color: rgb(205, 141, 141);
+    color: inherit;
 }
 .plans p span:nth-child(2){
     font-weight: bolder;
@@ -196,9 +192,39 @@ header button{
     background-color: #0D1B2A;
     color: white;
 }
-
 .team-plan{
     background-color: #E5E7EB;
 }
 
                 /* footer aria */
+footer{
+    background-color: #0D1B2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(162, 157, 157);
+    padding: 1rem;
+    font-size: smaller;
+}
+footer div{
+    margin: 0 2rem; 
+}
+footer ul{
+    display: flex;   
+    gap: 1rem;
+}
+footer a{
+    color: inherit;
+}
+.social-media li{
+    font-size: 1.5rem;
+}
+.social-media a{
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.social-media a:hover{
+    background-color: rgb(245, 245, 245);
+    color: black;
+}

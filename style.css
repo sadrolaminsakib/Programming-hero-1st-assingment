@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'inter', 'sans-serif';
@@ -11,7 +12,6 @@ a{
 }
 ol, ul{
     list-style-type: none;
-    display: flex;
 }
 button{
     background-color: blueviolet;
@@ -21,7 +21,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+    border: none;
 }
 button:hover{
     background-color: rgb(0, 123, 255);
@@ -34,6 +34,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 20px 60px;
+}
+nav ul{
+    display: flex;
 }
 nav ul li{
     margin: 0 10px;
@@ -115,4 +118,87 @@ header button{
 .speaker-profile p :nth-child(3){
     font-size: 0.5rem;
 }
-.speaker-layout 
+
+                        /* cost layout  */
+.cost-layout{
+    margin: 5rem;
+}
+.cost-layout>p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+.plans{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 2rem auto;
+    
+}
+.cost-layout h4{
+    text-align: center;
+    font-size: 2rem;
+}
+.plans{
+    width: 65%;
+}
+.plans div{
+    
+}
+.plans p{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1px solid rgb(228, 228, 238);
+    margin: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
+}
+.plans ul{
+    
+    
+}
+.plans ul li{
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    list-style: inside;
+    font-size: 0.5rem;
+}
+.standard-plan, .pro-plan, .team-plan{
+    border: 1px solid rgb(228, 228, 238);   
+    padding: 1rem;
+    border-radius: 10px;   
+}
+.plans p span:nth-child(1),
+.plans p span:nth-child(3)
+{
+    font-size: 0.5rem;
+}
+.plans p span:nth-child(2){
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+.plans button{
+    width: 100%;
+}
+.standard-plan{
+    background-color: #FFFFFF;
+}
+.standard-plan button, .team-plan button{
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+    border: 0.5px solid rgb(228, 228, 238);;
+}
+.standard-plan button{
+    color: blue;
+}
+.pro-plan{
+    background-color: #0D1B2A;
+    color: white;
+}
+
+.team-plan{
+    background-color: #E5E7EB;
+}
+
+                /* footer aria */

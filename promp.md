@@ -1,0 +1,1 @@
+Create a modern Sponsors section for the DevConf 2026 landing page using only HTML5 and CSS3. Include a heading, a short subtitle, six sponsor cards (Google, Microsoft, GitHub, Vercel, Cloudflare, Anthropic), and a "Become a Sponsor" button. Make the design responsive, visually consistent with the rest of the website, and return only the HTML and CSS for this section.
